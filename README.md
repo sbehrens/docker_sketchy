@@ -6,7 +6,7 @@ Sketchy with Docker
 To Install Sketchy on an EC2 instance
 
 Launch an EC2 instance with Amazon Linux AMI
-- sudo apt-get install -y docker
+- sudo apt-get install -y docker.io
 - sudo service docker start
 
 Download sketchy repo from docker
