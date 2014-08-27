@@ -5,21 +5,21 @@ Sketchy with Docker
 
 To Install Sketchy on an EC2 instance
 
-- Launch an EC2 instance with Amazon Linux AMI
--- sudo apt-get install -y docker
--- sudo service docker start
+Launch an EC2 instance with Amazon Linux AMI
+- sudo apt-get install -y docker
+- sudo service docker start
 
-- Download sketchy repo from docker
--- sudo docker pull nagwww/sketchy
+Download sketchy repo from docker
+- sudo docker pull nagwww/sketchy
 
-- Install Sketchy as
---  sudo docker run -e "use_ssl=True" -e "host=ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com" -e  "C_FORCE_ROOT=true" -i -t -p 443:443 "nagwww/sketchy:v1" /home/ubuntu/sketchy.sh
+Install Sketchy as
+- sudo docker run -e "use_ssl=True" -e "host=ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com" -e  "C_FORCE_ROOT=true" -i -t -p 443:443 "nagwww/sketchy:v1" /home/ubuntu/sketchy.sh
 
 To build a Docker image
 - Change the Dockerfile as needed
 
-- Build the image as
---  docker build -t "nagwww/sketchy:v1" .
+Build the image as
+- docker build -t "nagwww/sketchy:v1" .
 
-- Push the image to Docker as
--- docker push nagwww/sketchy
+Push the image to Docker as
+- docker push nagwww/sketchy
