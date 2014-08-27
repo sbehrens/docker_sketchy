@@ -14,6 +14,7 @@ Download sketchy repo from docker
 
 Install Sketchy as
 - sudo docker run -e "use_ssl=True" -e "host=ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com" -e  "C_FORCE_ROOT=true" -i -t -p 443:443 "nagwww/sketchy:v1" /home/ubuntu/sketchy.sh
+- make sure to change the host to your public ec2 hostname
 
 To build a Docker image
 - Change the Dockerfile as needed
