@@ -17,7 +17,7 @@ Install Sketchy as
 - make sure to change the host to your public ec2 hostname
 
 Try it out:
-- https://ec2-your-host-here.compute-1.amazonaws.com/eager?url=http://googlecom&type=sketch
+- https://ec2-your-host-here.compute-1.amazonaws.com/eager?url=http://google.com&type=sketch
 
 To build a Docker image
 - Change the Dockerfile as needed
